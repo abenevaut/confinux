@@ -1,0 +1,5 @@
+if ( -f ${HOME}/confinux/config/mytcshrc ) then
+    source ${HOME}/confinux/config/mytcshrc
+endif
+
+# EOF

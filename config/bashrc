@@ -1,0 +1,18 @@
+## PATH
+set path=(${HOME}/confinux/bin $path)
+
+## ALIAS
+alias f 'fg'
+alias j 'jobs'
+alias ls 'ls  --color=force'
+alias l 'ls -l'
+alias ll 'ls -l'
+alias la 'ls -la'
+alias cp 'cp -v'
+alias rm 'rm -iv'
+alias mv 'mv -v'
+alias cat 'cat -e'
+alias emacs 'emacs -nw'
+alias ne 'emacs'
+alias e 'ne'
+alias vg 'valgrind --leak-check=yes --show-reachable=yes'

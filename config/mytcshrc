@@ -1,0 +1,81 @@
+#!/bin/tcsh
+## .mytcshrc for .mytcshrc in confinux/config/tcshrc
+##
+## Made by antoine benevaut
+## Login   <antoine@cavaencoreparlerdebits.fr>
+##
+## Started on  Thu Jan 22 09:07:19 2009 antoine benevaut
+## Last update Mon Mar  7 18:30:34 2011 Antoine
+##
+
+# Set default file permissions
+umask 022
+
+# Avoid coredump information
+limit coredumpsize 0
+
+# Set file completion of tcsh
+set filec
+
+# Immediate notification of job comp.
+set notify
+
+# Choices listed when tab comp. fails
+set autolist = ambiguous
+
+# Ignore these in file completion
+# Windows format :  .vcproj .suo .ncb .sln .dll .user
+set fignore=(.old .vcproj .suo .ncb .sln .dll .user \~ .bak)
+
+# Set hostname
+set host = `/bin/hostname`
+
+# Set short hostname
+set shost = `/bin/hostname -s`
+
+## PROMPT
+set prompt='%n //%c>'
+set rprompt='<SM@%m>'
+
+## HISTORY
+set history=150
+# set savehist=1000
+# Doesn't save hist. on logout
+unset savehist
+set watch=(1 any any)
+
+## PATH
+set path=(${HOME}/confinux/bin $path)
+
+
+# --- NodeJS
+export PATH=$PATH:/opt/node/bin
+export NODE_PATH=/opt/node:/opt/node/lib/node_modules 
+# ---
+
+# Don't allow autologouts
+unset autologout
+
+## ENVIRONEMENT
+setenv EDITOR "emacs"
+setenv PAGER "less"
+setenv LD_LIBRARY_PATH '~/Lib/c/'
+
+setenv DEVKITPRO "/opt/devkitpro"
+setenv DEVKITARM "$DEVKITPRO/devkitARM"
+
+## ALIAS
+alias f 'fg'
+alias j 'jobs'
+alias ls 'ls  --color=force'
+alias l 'ls -l'
+alias ll 'ls -l'
+alias la 'ls -la'
+alias cp 'cp -v'
+alias rm 'rm -v'
+alias mv 'mv -v'
+alias cat 'cat -e'
+alias emacs 'emacs -nw'
+alias ne 'emacs'
+alias e 'ne'
+alias vg 'valgrind --leak-check=yes --show-reachable=yes'
