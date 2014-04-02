@@ -5,7 +5,7 @@
 ;; Login   <beneva_a@epitech.net>
 ;; 
 ;; Started on  Sun Sep 12 19:29:44 2010 Antoine
-;; Last update Tue Apr  1 09:27:37 2014 Antoine
+;; Last update Wed Apr  2 14:07:04 2014 Antoine
 ;;
 
 ;; Standard
@@ -66,7 +66,7 @@
 (prefer-coding-system 'utf-8)
 
 ;; Set tab value
-(setq tab-width 2) ; or any other preferred value
+(setq tab-width 4) ; or any other preferred value
     (defvaralias 'c-basic-offset 'tab-width)
     (defvaralias 'cperl-indent-level 'tab-width)
 
