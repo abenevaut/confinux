@@ -5,7 +5,7 @@
 ;; Login   <beneva_a@epitech.net>
 ;; 
 ;; Started on  Sun Sep 12 19:29:44 2010 Antoine
-;; Last update Wed Mar 16 20:00:25 2011 Antoine
+;; Last update Tue Apr  1 09:27:37 2014 Antoine
 ;;
 
 ;; Standard
@@ -64,6 +64,11 @@
 
 ;; Set emacs encoding to UTF8
 (prefer-coding-system 'utf-8)
+
+;; Set tab value
+(setq tab-width 2) ; or any other preferred value
+    (defvaralias 'c-basic-offset 'tab-width)
+    (defvaralias 'cperl-indent-level 'tab-width)
 
 ;; Function
 
