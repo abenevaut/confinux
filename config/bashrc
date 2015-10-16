@@ -1,6 +1,3 @@
-## PATH
-set path=(${HOME}/confinux/bin $path)
-
 ## ALIAS
 alias f 'fg'
 alias j 'jobs'
