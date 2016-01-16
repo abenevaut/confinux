@@ -1,9 +1,9 @@
 ;;
 ;; .std.el for emacs standard configuration in svn: lib/elisp
-;; 
+;;
 ;; Made by Antoine
 ;; Login   <beneva_a@epitech.net>
-;; 
+;;
 ;; Started on  Sun Sep 12 19:29:44 2010 Antoine
 ;; Last update Wed Apr  2 14:07:04 2014 Antoine
 ;;
@@ -27,12 +27,21 @@
 (if (file-exists-p "~/confinux/config/emacs/mode-html.el")
     (load-file "~/confinux/config/emacs/mode-html.el"))
 
+(if (file-exists-p "~/confinux/config/emacs/mode-apache.el")
+    (load-file "~/confinux/config/emacs/mode-apache.el"))
+
 ;; Auto Load
 
 (setq auto-mode-alist
       (append '(("\\.tpl$" . html-mode)
 		("\\.php*$" . php-mode)
 		("\\.eyecode$" . php-mode)) auto-mode-alist))
+
+(add-to-list 'auto-mode-alist '("\\.htaccess\\'"   . apache-mode))
+(add-to-list 'auto-mode-alist '("httpd\\.conf\\'"  . apache-mode))
+(add-to-list 'auto-mode-alist '("srm\\.conf\\'"    . apache-mode))
+(add-to-list 'auto-mode-alist '("access\\.conf\\'" . apache-mode))
+(add-to-list 'auto-mode-alist '("sites-\\(available\\|enabled\\)/" . apache-mode))
 
 ;; Configuration
 
