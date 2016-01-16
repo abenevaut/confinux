@@ -34,8 +34,8 @@ set host = `/bin/hostname`
 set shost = `/bin/hostname -s`
 
 ## PROMPT
-set prompt='%n //%c>'
-set rprompt='<SM@%m>'
+set prompt='%c/>'
+set rprompt='<%n@%m>'
 
 ## HISTORY
 set history=150
