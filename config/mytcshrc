@@ -48,11 +48,6 @@ set watch=(1 any any)
 set path=(${HOME}/confinux/bin $path)
 
 
-# --- NodeJS
-export PATH=$PATH:/opt/node/bin
-export NODE_PATH=/opt/node:/opt/node/lib/node_modules 
-# ---
-
 # Don't allow autologouts
 unset autologout
 
