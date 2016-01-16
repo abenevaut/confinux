@@ -18,8 +18,8 @@
 
 ;; Mode (found on the internet)
 
-(if (file-exists-p "~/confinux/config/emacs/mode-css.el")
-    (load-file "~/confinux/config/emacs/mode-css.el"))
+;(if (file-exists-p "~/confinux/config/emacs/mode-css.el")
+;    (load-file "~/confinux/config/emacs/mode-css.el"))
 
 (if (file-exists-p "~/confinux/config/emacs/mode-php.el")
     (load-file "~/confinux/config/emacs/mode-php.el"))
