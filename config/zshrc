@@ -98,23 +98,22 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ## ENVIRONEMENT
-setenv EDITOR "emacs"
-setenv PAGER "less"
+export EDITOR="emacs"
+export PAGER="less"
 
 ## ALIAS
-alias f 'fg'
-alias j 'jobs'
-alias ls 'ls  --color=force'
-alias l 'ls -l'
-alias ll 'ls -l'
-alias la 'ls -la'
-alias cp 'cp -v'
-alias rm 'rm -v'
-alias mv 'mv -v'
-alias cat 'cat -e'
-alias emacs 'emacs -nw'
-alias ne 'emacs'
-alias e 'ne'
+alias f='fg'
+alias j='jobs'
+alias l='ls -l'
+alias ll='ls -l'
+alias la='ls -la'
+alias cp='cp -v'
+alias rm='rm -v'
+alias mv='mv -v'
+alias cat='cat -e'
+alias emacs='emacs -nw'
+alias ne='emacs'
+alias e='ne'
 
 # Keypad
 # 0 . Enter
