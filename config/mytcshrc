@@ -5,7 +5,7 @@
 ## Login   <antoine@cavaencoreparlerdebits.fr>
 ##
 ## Started on  Thu Jan 22 09:07:19 2009 antoine benevaut
-## Last update Mon Mar  7 18:30:34 2011 Antoine
+## Last update Wed May  2 16:54:16 2018 Antoine Benevaut
 ##
 
 # Set default file permissions
@@ -45,7 +45,7 @@ unset savehist
 set watch=(1 any any)
 
 ## PATH
-set path=(${HOME}/confinux/bin $path)
+set path=(${HOME}/bin ${HOME}/confinux/bin $path)
 
 
 # Don't allow autologouts
@@ -69,8 +69,4 @@ alias la 'ls -la'
 alias cp 'cp -v'
 alias rm 'rm -v'
 alias mv 'mv -v'
-alias cat 'cat -e'
 alias emacs 'emacs -nw'
-alias ne 'emacs'
-alias e 'ne'
-alias vg 'valgrind --leak-check=yes --show-reachable=yes'
