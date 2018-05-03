@@ -1,4 +1,5 @@
 ## ALIAS
+
 alias f="fg"
 alias j="jobs"
 alias l="ls -l"
